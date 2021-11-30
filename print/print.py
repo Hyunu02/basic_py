@@ -18,3 +18,9 @@ print("I have a doggo called {name} and she is {age}".format(name = "Hyba", age 
 
 present = "a camera"
 print(f"What did you really give me {present}?")
+
+# when printing a number, you can print directly if use ',' but
+# cannot when used '+'
+
+print("I wish I had", 4, "pencils")
+print("And I wish I had " + str(4) + " pens")
