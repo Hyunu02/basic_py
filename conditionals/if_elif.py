@@ -9,4 +9,12 @@ else:
 
 likes_snakes = input("Do you like snakes? ")
 print(likes_snakes)
-print(1==1)
+
+print (10 // 2)
+print (10 / 2)
+
+print((3 > 0) and (3 < 5))
+print((3 > 0) & (3 < 5))
+
+print((3 < 0) or (3 < 5))
+print((3 < 0) | (3 < 5))
