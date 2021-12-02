@@ -15,8 +15,7 @@ print("\n")
 
 # using range() built-in function
 
-for i in range(5):
-  print(board_games[i])
+for i in range(5): print(board_games[i])
 
 phrase = "Iteration number: "
 
