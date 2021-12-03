@@ -14,3 +14,15 @@ trip_planner(first_destination = "Iceland", final_destination = "Germany", secon
 trip_planner("Brooklyn", "Queens")
 
 # scope --> name where variable can be accessed
+
+# multiple returns
+def top_tourist_locations_italy():
+  first = "Rome"
+  second = "Venice"
+  third = "Florence"
+  return first, second, third
+most_popular1, most_popular2, most_popular3 = top_tourist_locations_italy()
+
+print(most_popular1)
+print(most_popular2)
+print(most_popular3)
