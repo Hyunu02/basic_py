@@ -23,3 +23,23 @@ def more_frequent_item(lst, item1, item2):
     c2 = lst.count(item2)
     if c1 >= c2: return item1
     return item2
+
+# Double Index
+# double a value at a given position
+def double_index(lst, index):
+    if index >= len(lst):
+        return lst  # return original lst if invalid index
+    newLst = lst[:index]
+    newLst.append(lst[index] * 2)
+    newLst += lst[index + 1:]
+    return newLst
+
+# Middle Item
+# FINDS THE MIDDLE ITEM FROM A LIST OF VALUES
+def middle_element(lst):
+    n = len(lst)
+    if n % 2 != 0:
+        return lst[n//2]
+    else:
+        ave = (lst[n//2] + lst[n//2-1])/2
+        return ave
