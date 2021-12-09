@@ -23,3 +23,45 @@ hey = \
 Hi
 Hey"""
 print(hey.split('\n'))
+
+# .join() --> essentially the opposite of .split()
+reapers_line_one_words = ["Black", "reapers", "with", "the", "sound", "of", "steel", "on", "stones"]
+
+reapers_line_one = " ".join(reapers_line_one_words)
+print(reapers_line_one) # => Black reapers with the sound of steel on stones
+
+winter_trees_lines = ['All the complicated details', 'of the attiring and', 
+'the disattiring are completed!', 'A liquid moon', 'moves gently among', 'the long branches.',
+'Thus having prepared their buds', 'against a sure winter', 'the wise trees', 'stand sleeping in the cold.']
+
+winter_trees_full = "\n".join(winter_trees_lines)
+print(winter_trees_full)
+
+# .strip() --> removes all whitespace characters from beginning till end
+# whitespace in the middle is preserved
+# can also .strip(x) that will strip that character
+love_maybe_lines = ['Always    ', '     in the middle of our bloodiest battles  ', 'you lay down your arms', '           like flowering mines    ','\n' ,'   to conquer me home.    ']
+love_maybe_lines_stripped = []
+for i in love_maybe_lines:
+  love_maybe_lines_stripped.append(i.strip())
+love_maybe_full = "\n".join(love_maybe_lines_stripped)
+print(love_maybe_full)
+
+# string_name.replace(character_being_replaced, new_character)
+phrase = "I like strawberry because strawberry is strawberry"
+print(phrase.replace("strawberry", "blueberry"))
+
+# .find() --> returns first index value where located
+god_wills_it_line_one = "The very earth will disown you"
+
+disown_placement = god_wills_it_line_one.find('disown')
+
+# .format() --> include in string
+def poem_title_card(title, poet):
+  return 'The poem "{}" is written by {}.'.format(title, poet)
+
+print(poem_title_card("500", "Deborah"))
+
+fish = "salmon"
+food = "takoyaki"
+print("Do you prefer {food} or {fish}?".format(fish = fish, food = food))
