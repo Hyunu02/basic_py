@@ -55,6 +55,8 @@ print(phrase.replace("strawberry", "blueberry"))
 god_wills_it_line_one = "The very earth will disown you"
 
 disown_placement = god_wills_it_line_one.find('disown')
+print(disown_placement)
+print(god_wills_it_line_one.find('banana')) # returns -1 if not found
 
 # .format() --> include in string
 def poem_title_card(title, poet):
